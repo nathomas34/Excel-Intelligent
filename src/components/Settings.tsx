@@ -153,7 +153,7 @@ export const Settings: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
                     : 'hover:bg-gray-50 dark:hover:bg-gray-700 dark:border-gray-600 dark:text-gray-300'
                 }`}
               >
-                <img src="https://mistral.ai/images/logo-dark.svg" alt="Mistral" className="w-8 h-8 dark:invert" />
+                <img src="https://cdn.jaimelesstartups.fr/wp-content/uploads/2024/02/Logo%20de%20la%20startup%20Mistral.ai.png" alt="Mistral" className="w-8 h-8 dark:invert" />
                 <span className="font-medium">Mistral AI</span>
               </button>
             </div>
@@ -659,14 +659,14 @@ export const Settings: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
             onClick={onClose}
             className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors"
           >
-            {t('settings.buttons.cancel')}
+            {t('cancel')}
           </button>
           <button
             onClick={onClose}
             className="px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-md transition-colors flex items-center gap-2"
           >
             <Save className="w-4 h-4" />
-            {t('settings.buttons.save')}
+            {t('save')}
           </button>
         </div>
       </div>
