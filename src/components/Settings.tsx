@@ -639,6 +639,17 @@ export const Settings: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
                   </button>
                   <button
                     className={`flex-1 p-2 rounded-md border flex items-center justify-center gap-2 dark:border-gray-600 ${
+                      settings.language === 'en'
+                        ? 'bg-blue-50 border-blue-200 text-blue-700 dark:bg-blue-900 dark:border-blue-800 dark:text-blue-300'
+                        : 'hover:bg-gray-50 dark:hover:bg-gray-700 dark:text-gray-300'
+                    }`}
+                    onClick={() => handleLanguageChange('de')}
+                  >
+                    <Globe2 className="w-4 h-4" />
+                    deutsh
+                  </button>
+                  <button
+                    className={`flex-1 p-2 rounded-md border flex items-center justify-center gap-2 dark:border-gray-600 ${
                       settings.language === 'fr'
                         ? 'bg-blue-50 border-blue-200 text-blue-700 dark:bg-blue-900 dark:border-blue-800 dark:text-blue-300'
                         : 'hover:bg-gray-50 dark:hover:bg-gray-700 dark:text-gray-300'
